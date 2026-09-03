@@ -45,6 +45,8 @@ body {
 .photo {
     position: relative;
     padding-right: 500px;
+    top: 50px;
+    left: 50px;
 }
 
 @keyframes cake {
