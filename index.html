@@ -27,9 +27,9 @@
   </head>
   <body>
     <div class="container">
-      <div id="photo"></div>
       <div id="birthdayText"></div>
       <div class="cake-container">
+        <div id="photo"></div>
         <div class="cake" id="cake"></div>
       </div>
     </div>
@@ -48,25 +48,10 @@
         <div id="subTitle">Hope you have a wonderful day. Love you and miss you lots! </div>
       `;
 
-      function show_image(src, width, height,alt) {
-            // Create a new image element
-            let img = document.createElement("img");
+      const imageContainer = document.getElementById("photo");
+      imageContainer.innerHTML = <img src = "6.jpg">
 
-            // Set the source, width, 
-            // height, and alt attributes
-            img.src = src;
-            img.width = width;
-            img.height = height;
-            img.alt = alt;
-
-            // Append the image element
-            // to the body of the document
-            document.body.appendChild(img);
-        }
-
-        // Example usage:
-        show_image("6.jpg", 59.75, 90.05,"photo");
-
+  
       const cake = document.getElementById("cake");
 
       const colors = [
